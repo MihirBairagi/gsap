@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap 4</title>
+
+<style>
+body{
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+html{
+    font-size: 1vw;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.banner-section{
+    position: relative;
+    height: 200rem;
+    width: 100%;
+}
+.fixed-box{
+    height: 70rem;
+    width: 100%;
+    background-color: #000;
+    position: sticky;
+    top: 0%;
+    overflow: hidden;
+}
+.banner-box{
+    display: flex;
+    justify-content:space-around;
+}
+.img-box-1, .img-box-2{
+    width: 27%;
+    /* border: 1px solid red; */
+}
+.img-box-2{
+    margin-top: -380rem;
+    height: 80vh;
+    /* overflow: hidden; */
+}
+.img-box img{
+    width: 100%;
+}
+
+.center-box{
+    width: 60%;
+    text-align: center;
+}
+.path-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.circle{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 30rem;
+    color: transparent;
+    font-size: 0.001rem;
+    position: absolute;
+    left: 5%;
+    /* left: -5%; */
+    top: 28%;
+}
+#white{
+    background-color: #fff;
+}
+#orange{
+    background-color: orange;
+}
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+.scroll-text-box{
+    position: absolute;
+    top: 130%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.scroll-text-box h3 {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0;
+    font-family: 'Poppins', sans-serif;
+}
+div#lottie-container svg {
+    width: 15rem !important;
+}
+.another-section{
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+</head>
+<body>
+
+
+<section class="banner-section" >
+     <div class="fixed-box">
+        <div class="banner-box">
+            <div class="img-box-1" id="slide-up">
+                <div class="img-box">
+                    <img src="gsap-4-img/left-1.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-2.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-3.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-4.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-5.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-6.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-7.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-1.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/left-2.webp" alt="">
+                </div>
+            </div>
+            <div class="center-box">
+                <h1>Top 5 Indian Electronic Artists <br>You 
+                    Should Follow !
+                </h1>
+
+                <div id="lottie-container"></div>
+
+               
+                <div class="path-box">
+                    <div class="circle" id="white">0</div>
+                    <div class="circle" id="orange">0</div>
+                    <div class="circle" id="green">0</div>
+                    <div class="circle" id="blue">0</div>
+
+                    <svg  viewBox="0 0 700 200" width="100%" height="5rem">
+                        <path id="path" fill="none" stroke="transparent" stroke-width="4" d="M 0 0 v 300 h 650 v -300 z" />
+                    </svg>
+                    <div class="scroll-text-box">
+                        <h3 id="text-1" >Tech Panda</h3>
+                        <h3 id="text-2" >Karsh Kale </h3>
+                        <h3 id="text-3" >Midival Punditz</h3>
+                        <h3 id="text-4" >Bombay Dub Orchestra</h3>
+                        <h3 id="text-5" >Prem Joshua</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box-2" id="slide-down">
+                <div class="img-box">
+                    <img src="gsap-4-img/right-1.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/right-2.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/right-3.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/right-4.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/right-5.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/right-6.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="gsap-4-img/right-7.webp" alt="">
+                </div>
+            </div>
+        </div>
+     </div>   
+</section>
+
+<section class="another-section" >
+    <h2>
+        This is another Section
+    </h2>
+</section>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/MotionPathPlugin.min.js"></script>
+
+
+<script>
+
+// motion path 
+
+gsap.registerPlugin(MotionPathPlugin);
+
+
+gsap.to("#white", { duration: 6, opacity: 1, motionPath: "#path", repeat: -1 });
+gsap.to("#orange", { duration: 6, delay: 1, opacity: 1, motionPath: "#path", repeat: -1 });
+gsap.to("#green", { duration: 6, delay: 2, opacity: 1, motionPath: "#path", repeat: -1 });
+gsap.to("#blue", { duration: 6, delay: 3, opacity: 1, motionPath: "#path", repeat: -1 });
+
+
+// lottie animation 
+
+const lottieOptions = {
+      container: document.getElementById("lottie-container"),
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      path: "gsap-4-img/music-lottie.json",
+    };
+
+
+    const lottieAnimation = lottie.loadAnimation(lottieOptions);
+
+    
+gsap.to(lottieAnimation, {
+    scrollTrigger: {
+    trigger: "#lottie-container",
+    scroll: "body",
+    scrub: 1,
+    // markers: true,
+    start: "top 25%",
+    end: "bottom -70%",
+    onUpdate: (self) => {
+        const progress = self.progress;
+        lottieAnimation.goToAndStop(progress * lottieAnimation.totalFrames, true);
+    },
+    },
+    ease: "power1.inOut",
+});
+
+
+
+
+
+// scroll text
+gsap.registerPlugin(ScrollTrigger);
+
+var timeline = gsap.timeline({
+scrollTrigger: {
+    trigger: "#text-1", 
+    start: "top 70%",
+    end: "bottom -200%", 
+    scrub: 1, 
+    // markers: true,
+},
+});
+
+timeline.to("#text-1", {
+    opacity: 1,
+})
+timeline.from("#text-1", {
+    delay: 1,
+    opacity: 0,
+})
+timeline.to("#text-2", {
+    opacity: 1,
+})
+timeline.from("#text-2", {
+    delay: 1,
+    opacity: 0,
+})
+timeline.to("#text-3", {
+    opacity: 1,
+})
+timeline.from("#text-3", {
+    delay: 1,
+    opacity: 0,
+})
+timeline.to("#text-4", {
+    opacity: 1,
+})
+timeline.from("#text-4", {
+    delay: 1,
+    opacity: 0,
+})
+timeline.to("#text-5", {
+    opacity: 1,
+})
+
+    
+gsap.registerPlugin(ScrollTrigger);
+
+var timeline2 = gsap.timeline({
+scrollTrigger: {
+    trigger: "#slide-up", 
+    start: "top 70%",
+    end: "bottom -60%", 
+    scrub: 1, 
+    // markers: true,
+},
+});
+
+var timeline3 = gsap.timeline({
+scrollTrigger: {
+    trigger: "#slide-up", 
+    start: "top 70%",
+    end: "bottom -60%", 
+    scrub: 1, 
+    // markers: true,
+},
+});
+
+timeline2.to("#slide-up", {
+    y: -5600,
+})
+timeline3.to("#slide-down", {
+    y: 5600,
+})
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
